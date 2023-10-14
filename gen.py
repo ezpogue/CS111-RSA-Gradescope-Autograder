@@ -70,4 +70,3 @@ def gen(e, n, CIS, message):
 
     return output
 
-print(gen(5, 1369, 3, "*If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.*"))

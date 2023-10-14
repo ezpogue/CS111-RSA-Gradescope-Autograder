@@ -17,12 +17,13 @@ class TestAssignment(unittest.TestCase):
   # https://github.com/gradescope/gradescope-utils/tree/master/gradescope_utils/autograder_utils 
 
   #REPLACE THESE TESTS WITH YOUR OWN TESTS
-
   @weight(10)
   def test_out(self):
     #Compare the stdout of the reference and student solution for helloConsole.py
-
-    self.compareOutput("./CS111RSA\n" + gen(5, 1369, 3, "*If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.*"))
+    cmd = "./CS111RSA\n" + gen(5, 1369, 3, "*If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.*")
+    print(cmd)
+    self.compareOutput(cmd)
+  
 
   #DO NOT EDIT BELOW THIS LINE
   def outputDirectory(self):
