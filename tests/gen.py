@@ -1,3 +1,5 @@
+import sys
+
 CHAR_INT_START = 3
 SPECIAL_CHARS_SIZE = 5
 SPECIAL_CHARS = [' ', '\"', ',', '.', '\'']
@@ -67,6 +69,12 @@ def gen(e, n, CIS, message):
     for i in encrypted:
         output += str(ord(i)) + ' '
     output += "\n"
-
     return output
 
+e = int(input("Input e: "))
+n = int(input("Input n: "))
+CIS = int(input("Input CIS: "))
+m = input("Input message: ")
+with open(sys.argv[1], 'w') as f:
+    f.write(gen(e, n, CIS, m))
+    f.close()

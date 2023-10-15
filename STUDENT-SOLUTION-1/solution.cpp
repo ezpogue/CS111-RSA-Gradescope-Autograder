@@ -17,6 +17,18 @@ int fastmod(int base,int exponent, int modulo){
     return -1;
 }
 
+bool isPrime(int n) 
+{  
+    if (n <= 1) 
+        return false; 
+
+    for (int i = 2; i < n; i++) 
+        if (n % i == 0) 
+            return false; 
+  
+    return true; 
+} 
+
 int dumbmodinverse(int number,int modulo){
     for(int i = 1;10000; i++){
         if((i*number)%modulo == 1)
@@ -48,8 +60,8 @@ int main(){
         }
     }
     phi = (p-1)*(q-1);
-    if (gcd(e,phi) != 1 || p == q){
-        cout << "Public key not valid!";
+    if (gcd(e,phi) != 1 || p == q || !isPrime(p) || !isPrime(q)){
+        cout << "Public key is not valid!" << endl;
         return 0;
     }
     d = dumbmodinverse(e,phi);
@@ -74,6 +86,6 @@ int main(){
         else
             cout << (char)(i+62);
     }
-
+    cout << endl;
     return 0;
 }

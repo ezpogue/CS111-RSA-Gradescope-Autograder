@@ -74,6 +74,6 @@ int main(){
         else
             cout << (char)(i+62);
     }
-
+    cout << endl;
     return 0;
 }
