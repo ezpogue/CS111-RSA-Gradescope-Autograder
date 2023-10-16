@@ -14,7 +14,7 @@ class TestAssignment(unittest.TestCase):
   #The @weight decorator indicates the number of points this test is worth
   #For documentation of this and other decorators, see:
   # https://github.com/gradescope/gradescope-utils/tree/master/gradescope_utils/autograder_utils 
-
+  maxDiff = None
   #REPLACE THESE TESTS WITH YOUR OWN TESTS
 
   @weight(10)

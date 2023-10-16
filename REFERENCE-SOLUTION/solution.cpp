@@ -102,7 +102,6 @@ void solve() {
     for (auto c:messageInt) cout << c << " ";
     cout << endl;
     for (auto c:message) cout << c;
-    cout << endl;
 }
 
 int main() {

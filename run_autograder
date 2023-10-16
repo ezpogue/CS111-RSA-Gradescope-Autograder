@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-cp /autograder/submission/solution.cpp /autograder/source/STUDENT-SOLUTION-1
+rm -rf /autograder/source/STUDENT-SOLUTION-1/solution.cpp
+
+cp /autograder/submission/*.cpp /autograder/source/STUDENT-SOLUTION-1/solution.cpp
 
 cd /autograder/source
 
