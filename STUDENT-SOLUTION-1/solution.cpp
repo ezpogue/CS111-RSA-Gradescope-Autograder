@@ -73,18 +73,18 @@ int main(){
     }
     cout << endl;
     for (auto i: message){
-        if(i == 29)
+        if(i == 31)
             cout << " ";
-        else if (i == 30)
-            cout << "\"";
-        else if (i == 31)
-            cout << ".";
         else if (i == 32)
-            cout << ",";
+            cout << "\"";
         else if (i == 33)
+            cout << ",";
+        else if (i == 34)
+            cout << ".";
+        else if (i == 35)
             cout << "\'";
         else
-            cout << (char)(i+62);
+            cout << (char)(i+60);
     }
     return 0;
 }

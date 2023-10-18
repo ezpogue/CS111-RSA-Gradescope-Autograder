@@ -4,7 +4,7 @@ using ll = long long;
 
 int CHAR_INT_START;
 const int SPECIAL_CHARS_SIZE = 5;
-const char SPECIAL_CHARS[SPECIAL_CHARS_SIZE] = {' ', '\"', '.', ',', '\''};
+const char SPECIAL_CHARS[SPECIAL_CHARS_SIZE] = {' ', '\"', ',', '.', '\''};
 
 vector<bool> sieve(ll n) {
     vector<bool> prime(n+1, true);
@@ -57,7 +57,7 @@ map<ll, char> get_table() {
 void solve() {
     int e, n;
     cin >> e >> n; // >> CHAR_INT_START;
-    CHAR_INT_START = 3;
+    CHAR_INT_START = 5;
     int m;
     cin >> m;
     vector<int> encrypted(m);
