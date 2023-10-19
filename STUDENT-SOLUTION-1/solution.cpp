@@ -61,7 +61,7 @@ int main(){
     }
     phi = (p-1)*(q-1);
     if (gcd(e,phi) != 1 || p == q || !isPrime(p) || !isPrime(q)){
-        cout << "Public key is not valid!" << endl;
+        cout << "Public key is not valid!";
         return 0;
     }
     d = dumbmodinverse(e,phi);
