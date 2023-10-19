@@ -78,7 +78,7 @@ void solve() {
     //assert(phi_n != -1);
     
     if (p==-1||q==-1||__gcd((int)phi_n, e) != 1 || (p==q)) {
-        cout << "Public key is not valid!" << endl;
+        cout << "Public key is not valid!";
         return;
     }
 
